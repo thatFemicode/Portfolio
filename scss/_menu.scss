@@ -1,0 +1,135 @@
+.menu-btn {
+  position: absolute;
+  z-index: 1000;
+  right: 35px;
+  top: 25px;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    width: 28px;
+    height: 4px;
+    margin: 0 0 5px 0;
+    background-color: map-get($map: $color, $key: "green");
+    @include easeOut;
+  }
+  &.close {
+    transform: rotate(180deg);
+    top: 20px;
+
+    .btn-line {
+      // Line 1 - Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      // Line 2 - Hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      // Line 3 - Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
+.menu {
+  z-index: 998;
+  display: flex;
+  padding: 4em;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: map-get($map: $color, $key: "navy");
+  font-size: 2.2rem;
+  justify-content: space-around;
+  transition: opacity 0.4s, visibility 0.4s;
+  opacity: 1;
+  visibility: hidden;
+  width: 100%;
+
+  &.show {
+    visibility: visible;
+  }
+
+  .menu-nav {
+    display: block;
+    margin-block-start: 1em;
+    margin-inline-start: 0px;
+    margin-block-end: 1em;
+    margin-inline-end: 0px;
+    font-size: 2rem;
+    line-height: 2.5;
+    text-align: start;
+    margin-left: -100px;
+    margin-top: -60px;
+    // margin-top: -70px;
+    padding: 0 auto;
+    transform: translate3d(-200%, 0, 0);
+    @include easeOut;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .nav-item {
+      //   display: list-item;
+      margin: 0;
+      padding: 0;
+
+      @include easeOut;
+      transform: translate3d(600px, 0, 0);
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+
+        .nav-link {
+          color: map-get($map: $color, $key: "green");
+        }
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    // align-items: center;
+    font-size: 3rem;
+    margin-left: -120px;
+    margin-top: -80px;
+    // top: 10;
+  }
+
+  .social-item {
+    padding: 0 20px;
+    text-align: center;
+    justify-self: center;
+    @include easeOut;
+    transform: translate3d(-400%, 0, 0);
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .fab {
+      color: map-get($map: $color, $key: "green");
+      transition: transform 0.5s;
+      &:hover {
+        transform: translate(0, -10px);
+      }
+    }
+  }
+}
+
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}

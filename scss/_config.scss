@@ -1,0 +1,18 @@
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+.heading-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  color: map-get($map: $color, $key: lightest-stale);
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: map-get($map: $color, $key: slate);
+}

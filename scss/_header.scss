@@ -1,0 +1,35 @@
+#header {
+  //   background-color: map-get($map: $color, $key: "navy");
+  color: map-get($map: $color, $key: "green");
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 7em;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 40px;
+  max-height: 12rem;
+  z-index: 2000;
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .logos {
+    width: 8.34em;
+    display: flex;
+    flex-direction: column;
+    width: 8.34em;
+    position: relative;
+    height: 5rem;
+    transition: color 1s;
+    outline-color: transparent;
+    z-index: 1000;
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      color: map-get($map: $color, $key: "green");
+    }
+  }
+}

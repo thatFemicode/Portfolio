@@ -1,0 +1,15 @@
+.btn {
+  display: inline-block;
+  height: 52px;
+  line-height: 52px;
+  font-size: 0.875rem;
+  padding: 0 32px;
+  text-decoration: none;
+  background-color: map-get($map: $color, $key: "lnavy");
+  font-weight: 600;
+  color: map-get($map: $color, $key: "green");
+  border: 2px solid map-get($map: $color, $key: "green");
+  border-radius: 100px;
+  margin-top: 40px;
+  transition: 0.2s ease-in-out;
+}

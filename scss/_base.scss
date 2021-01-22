@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+}
+
+// Setting out body elements
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: map-get($map: $color, $key: "navy");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-weight: normal;
+  line-height: inherit;
+  -webkit-font-smoothing: inherit;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
