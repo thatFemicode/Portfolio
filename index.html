@@ -9,6 +9,22 @@
       name="Keywords"
       content="Ogunleye Oluwafemi Portfolio Website, Front-End Developer, Developer, Javascript enthusiast, Lagos, Nigeria"
     />
+    <meta property="og:site_name" content="ogunleyeoluwafemi.netlify.app" />
+    <meta property="og:title" content="Ogunleye Oluwafemi Portfolio" />
+    <meta
+      property="og:description"
+      content="I’m a front-end developer based in Lagos, Nigeria."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:site" content="@leyedavid10" />
+    <meta name="twitter:creator" content="@aleyedavid10" />
+    <meta name="twitter:title" content="ogunleyeoluwafemi.netlify.app" />
+    <meta
+      name="twitter:description"
+      content="I’m afront-end developer based in Lagos, Nigeria."
+    />
+    <meta name="twitter:app:country" content="NG" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -23,30 +39,40 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./dist/img/Screenshot (492).png"
+    />
     <link rel="stylesheet" href="./dist/css/style.css" />
     <title>Portfolio | Ogunleye Oluwafemi David</title>
   </head>
   <body>
     <header id="header">
       <div class="logos">
-        <a href="" class="logo">O.D.</a>
+        <a href="index.html" class="logo">O.D.</a>
       </div>
       <nav class="desktop-nav">
         <ul class="nav-links">
           <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
+            <a href="#header" class="nav-link log">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#about-me" class="nav-link">About Me</a>
+            <a href="#about-me" class="nav-link log">About Me</a>
           </li>
           <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link log">Projects</a>
           </li>
-          <li class="nav-item login">
-            <a href="#contact" class="nav-link">Contact</a>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link log">Contact</a>
           </li>
-          <li class="nav-item login">
-            <a href="#contact" class="nav-link">Resume</a>
+          <li class="nav-item">
+            <a
+              href="https://docs.google.com/document/d/1IbfnfmL4aCa5oSzPrXJI1dECMkGWVhY_fMRwH0BhDqY/edit"
+              class="nav-link resume"
+              >Resume</a
+            >
           </li>
         </ul>
       </nav>
@@ -68,7 +94,12 @@
             <a href="about-me" class="nav-link">Contacts</a>
           </li>
           <li class="nav-item">
-            <a href="#resume" class="nav-link" target="_blank">Resume</a>
+            <a
+              href="https://docs.google.com/document/d/1IbfnfmL4aCa5oSzPrXJI1dECMkGWVhY_fMRwH0BhDqY/edit"
+              class="nav-link"
+              target="_blank"
+              >Resume</a
+            >
           </li>
         </ul>
         <ul class="socials">
@@ -103,7 +134,7 @@
       <section id="home">
         <div class="inner-content">
           <div class="text">
-            <p id="pipe">Hello there 👋, I'm</p>
+            <p id="pipe">Hello World 👋, I'm</p>
             <h1 id="love">
               Ogunleye Oluwafemi<br />
               A
@@ -120,13 +151,13 @@
               to life and using the web to find solutions to problems faced by
               individuals
             </p>
-            <button id="cta" class="btn">Hire Me</button>
+            <button id="cta" class="btn"><a href="#contact">Hire me</a></button>
           </div>
         </div>
       </section>
       <section id="about-me">
         <h1>ABOUT ME</h1>
-
+        <h2 class="me1">Let me introduce myself</h2>
         <p class="me">
           I am Oluwafemi, a frontend developer hoping to become a fullstack
           developer in about 2 years. Looking to gain more experience in the
@@ -143,14 +174,19 @@
           adjusting pixels or a Figma setup but I'm committed to bringing those
           UI designs to life to create fluent user experience
         </p>
+        <p class="me4">
+          Anytime i am not on my computer playing around with codes or learnig
+          more about my stack, I am either watching football or basketball
+          highlights of games i missed.
+        </p>
         <div class="skulls">
           <p class="skills">
             Here are few technologies i've been working with recently:
           </p>
           <ul class="skillset">
-            <li class="skill">Javascript (ES6)</li>
-            <li>HTML &amp; CSS</li>
-            <li>SCSS (CSS Compiler)</li>
+            <li class="skill">JavaScript (ES6)</li>
+            <li>HTML5 &amp; CSS3</li>
+            <li>SaaS (CSS Pre-processor)</li>
             <li>GSAP</li>
             <li>Git</li>
           </ul>
@@ -165,7 +201,9 @@
               <a href="https://github.com/thatFemicode/Dice-App" target="_blank"
                 ><img src="./dist/img/github.svg" alt=""
               /></a>
-              <a href=""><img src="./dist/img/link.svg" alt="" /></a>
+              <a href="https://ludo-dice.netlify.app"
+                ><img src="./dist/img/link.svg" alt=""
+              /></a>
             </div>
             <div class="project-box-content">
               <h3 class="heading3">Dice Game App</h3>
@@ -179,7 +217,9 @@
                 target="_blank"
                 ><img src="./dist/img/github.svg" alt="alt github"
               /></a>
-              <a href=""><img src="./dist/img/link.svg" alt="alt link" /></a>
+              <a href="https://rgbgame-app.netlify.app/" target="_blank"
+                ><img src="./dist/img/link.svg" alt="alt link"
+              /></a>
             </div>
             <div class="project-box-content">
               <h3 class="heading3">Color Game App</h3>
@@ -193,7 +233,11 @@
                 target="_blank"
                 ><img src="./dist/img/github.svg" alt="alt github"
               /></a>
-              <a href=""><img src="./dist/img/link.svg" alt="alt link" /></a>
+              <a
+                href="https://thatfemicode.github.io/Fylo-Light-Landing-page/"
+                target="_blank"
+                ><img src="./dist/img/link.svg" alt="alt link"
+              /></a>
             </div>
             <div class="project-box-content">
               <h3 class="heading3">Fylo Landing Page FE Mentor</h3>
@@ -207,7 +251,9 @@
                 target="_blank"
                 ><img src="./dist/img/github.svg" alt="alt github"
               /></a>
-              <a href=""><img src="./dist/img/link.svg" alt="" /></a>
+              <a href="https://insure-landing-page-fementor.netlify.app"
+                ><img src="./dist/img/link.svg" alt=""
+              /></a>
             </div>
             <div class="project-box-content">
               <h3 class="heading3">Insure Landing Page FE Mentor</h3>
@@ -221,7 +267,11 @@
                 target="_blank"
                 ><img src="./dist/img/github.svg" alt="alt github"
               /></a>
-              <a href=""><img src="./dist/img/link.svg" alt="" /></a>
+              <a
+                href="https://tracking-component-fementor.netlify.app"
+                target="_blank"
+                ><img src="./dist/img/link.svg" alt=""
+              /></a>
             </div>
             <div class="project-box-content">
               <h3 class="heading3">Tracking Component FE Mentor</h3>

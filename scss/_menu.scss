@@ -70,6 +70,7 @@
     margin-left: -100px;
     margin-top: -60px;
     // margin-top: -70px;
+    background-color: map-get($map: $color, $key: "navy");
     padding: 0 auto;
     transform: translate3d(-200%, 0, 0);
     @include easeOut;
@@ -84,7 +85,7 @@
       padding: 0;
 
       @include easeOut;
-      transform: translate3d(600px, 0, 0);
+      transform: translate3d(-200%, 0, 0);
 
       &.show {
         transform: translate3d(0, 0, 0);

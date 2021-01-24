@@ -52,16 +52,20 @@ menuBtn.addEventListener("click", toggleMenu);
 // });
 
 // headerObserver.observe(header);
+// Link to Resume
+const resume = document.querySelector(".resume");
+
+resume.target = "_blank";
 
 // Scroll into view
-const navLink = document.querySelector(".nav-links");
+const navLink = document.querySelector(".nav-link");
 navLink.addEventListener("click", scrollInto);
 
 function scrollInto(e) {
   e.preventDefault();
 
   // Using the matching startegy
-  if (e.target.classList.contains("nav-link")) {
+  if (e.target.classList.contains("log")) {
     const id = e.target.getAttribute("href");
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
@@ -76,53 +80,53 @@ const about = document.querySelector("#about-me");
 const projects = document.querySelector("#projects");
 // Creating a Timeline
 
-const mainTl = gsap.timeline();
+// const mainTl = gsap.timeline();
 
-mainTl
-  .from(header, {
-    y: 16,
-    opacity: 0,
-    duratio: 3,
-    ease: "power3.inout",
-  })
-  .from(h1, {
-    delay: -0.4,
-    x: -200,
-    duration: 2,
-    ease: "power3.out",
-    stagger: {
-      amount: 0.2,
-    },
-  })
-  .from(par, {
-    delay: -0.4,
-    x: -1000,
-    duration: 2,
-    ease: "power3.out",
-    stagger: {
-      amount: 0.25,
-    },
-  })
-  .from(high, {
-    // delay: -0.4,
-    y: -40,
-    opacity: 0,
-    duration: 1,
-    ease: "power3.out",
-    stagger: {
-      amount: 0.2,
-    },
-  })
-  .from(button, {
-    // delay: -0.4,
-    y: -60,
-    opacity: 0,
-    duration: 1,
-    ease: "power3.out",
-    stagger: {
-      amount: 0.45,
-    },
-  });
+// mainTl
+//   .from(header, {
+//     y: 16,
+//     opacity: 0,
+//     duratio: 0.5,
+//     ease: "power3.inout",
+//   })
+//   .from(h1, {
+//     delay: -0.2,
+//     x: -200,
+//     duration: 0.7,
+//     ease: "power3.out",
+//     stagger: {
+//       amount: 0.2,
+//     },
+//   })
+//   .from(par, {
+//     delay: -0.3,
+//     x: -1000,
+//     duration: 2,
+//     ease: "power3.out",
+//     stagger: {
+//       amount: 0.25,
+//     },
+//   })
+//   .from(high, {
+//     // delay: -0.4,
+//     y: -40,
+//     opacity: 0,
+//     duration: 0.2,
+//     ease: "power3.out",
+//     stagger: {
+//       amount: 0.2,
+//     },
+//   })
+//   .from(button, {
+//     // delay: -0.4,
+//     y: -60,
+//     opacity: 0,
+//     duration: 0.8,
+//     ease: "power3.out",
+//     stagger: {
+//       amount: 0.45,
+//     },
+//   });
 
 const aboutTl = gsap.timeline();
 

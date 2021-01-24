@@ -191,6 +191,7 @@ img {
     text-align: start;
     margin-left: -100px;
     margin-top: -60px;
+    background-color: #0a192f;
     padding: 0 auto;
     transform: translate3d(-200%, 0, 0);
     transition: all 0.5s ease-out; }
@@ -200,7 +201,7 @@ img {
       margin: 0;
       padding: 0;
       transition: all 0.5s ease-out;
-      transform: translate3d(600px, 0, 0); }
+      transform: translate3d(-200%, 0, 0); }
       .menu .menu-nav .nav-item.show {
         transform: translate3d(0, 0, 0); }
         .menu .menu-nav .nav-item.show .nav-link {
@@ -259,6 +260,8 @@ img {
     #home .inner-content p {
       font-size: 20px;
       color: #8892b0; }
+    #home .inner-content button a {
+      color: #64ffda; }
 
 #about-me {
   overflow: hidden;
@@ -272,6 +275,9 @@ img {
   #about-me h1 {
     font-size: 3rem;
     color: #ccd6f6; }
+  #about-me .me1 {
+    font-size: 1.3rem;
+    color: #64ffda; }
   #about-me .me {
     font-size: 20px;
     color: #8892b0; }
@@ -279,6 +285,9 @@ img {
     font-size: 20px;
     color: #8892b0; }
   #about-me .me3 {
+    font-size: 20px;
+    color: #8892b0; }
+  #about-me .me4 {
     font-size: 20px;
     color: #8892b0; }
   #about-me .skulls {

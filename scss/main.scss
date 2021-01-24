@@ -38,6 +38,11 @@
       font-size: 20px;
       color: map-get($map: $color, $key: slate);
     }
+    button {
+      a {
+        color: map-get($map: $color, $key: "green");
+      }
+    }
   }
 }
 #about-me {
@@ -59,6 +64,10 @@
     font-size: 3rem;
     color: map-get($map: $color, $key: lightest-stale);
   }
+  .me1 {
+    font-size: 1.3rem;
+    color: map-get($map: $color, $key: "green");
+  }
   .me {
     font-size: 20px;
     color: map-get($map: $color, $key: slate);
@@ -68,6 +77,10 @@
     color: map-get($map: $color, $key: slate);
   }
   .me3 {
+    font-size: 20px;
+    color: map-get($map: $color, $key: slate);
+  }
+  .me4 {
     font-size: 20px;
     color: map-get($map: $color, $key: slate);
   }
