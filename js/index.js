@@ -38,6 +38,15 @@ const toggleMenu = function () {
 
 menuBtn.addEventListener("click", toggleMenu);
 
+// Function to remove nav-links when clicked for the mobile aspect
+const navLinks = document.querySelectorAll(".nav-link");
+
+function linkAction() {
+  menu.classList.remove("show");
+  menuBtn.classList.remove("close");
+}
+
+navLinks.forEach((n) => n.addEventListener("click", linkAction));
 // Sticky Nav
 // const stickyNav = function (entries) {
 //   const [entry] = entries;
